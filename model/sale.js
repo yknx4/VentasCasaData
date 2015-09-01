@@ -10,7 +10,7 @@
   "frecuenciaAbonoDias= 0;
   "abonos= [{
       "cantidad= 0;
-      "fecha= "2015-02-01T06:00:00.000Z"    
+      "fecha= "2015-02-01T06:00:00.000Z"
   }]
 }
 */
@@ -19,7 +19,7 @@ function Sale() {
   this.fecha= Date.now();
   this.clienteID= 0;
   this.ProductoID= 0;
-  this.Precio = 0;    
+  this.Precio = 0;
   this.Pagado= false;
   this.enAbonos= false;
   this.abonoCantidad=0;

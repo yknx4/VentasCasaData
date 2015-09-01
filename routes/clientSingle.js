@@ -9,4 +9,3 @@ var typeStr = defaults.types.client;
 var route = new RouteModel(name,typeStr,true,true);
 
 module.exports = route;
-

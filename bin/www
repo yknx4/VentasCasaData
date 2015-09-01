@@ -5,7 +5,8 @@
  */
 var loki = require('lokijs');
 
-
+var cc          = require('config-multipaas');
+var config      = cc();
 //var settings = {
 //    autosave: true,
 //    autosaveInterval: 1000
@@ -43,7 +44,7 @@ var server = require('../app');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000);
+var port = normalizePort(config.get('PORT') || 3000);
 
 /**
  * Create HTTP server.
@@ -55,7 +56,7 @@ var port = normalizePort(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT |
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port,config.get('IP')|' 127.0.0.1');
 server.on('error', onError);
 server.on('listening', onListening);
 

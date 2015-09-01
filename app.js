@@ -1,5 +1,6 @@
 var db = GLOBAL.db;
 
+
 var defaults = require('./constants');
 var relRoutesDir = '../routes/'; //THIS IS RAN UNDER /bin/www so the paths must be relative to /bin
 var routesDir = './routes/';

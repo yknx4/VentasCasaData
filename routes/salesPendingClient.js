@@ -15,7 +15,7 @@ route.get = function (req, res, next) {
     var response = defaults.newResponse();
         var vale = parseInt(req.params.id);
         //console.log('ID: '+vale);
-        
+
         var qu = db.getCollection(name).find({clienteID:vale,Pagado:false});
         qu.forEach(function(item){
             item.pending = item.Precio
@@ -27,7 +27,7 @@ route.get = function (req, res, next) {
                 db.getCollection(name).update(item);
             }
         });
-    
+
         //console.log(qu);
        response.response = qu;
 
