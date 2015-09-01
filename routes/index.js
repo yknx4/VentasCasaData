@@ -5,7 +5,7 @@ var route = {
   get: null,
   post: null,
   put: null,
-  delete: null,
+  del: null,
   route: '/echo/:name'
 };
 

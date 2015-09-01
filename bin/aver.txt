@@ -1,0 +1,7 @@
+Listening on port 3000
+{"collection":{"name":"clients","data":[],"idIndex":[],"binaryIndices":{},"constraints":{"unique":{},"exact":{}},"uniqueNames":[],"transforms":{},"objType":"clients","dirty":true,"cachedIndex":null,"cachedBinaryIndex":null,"cachedData":null,"transactional":false,"cloneObjects":false,"asyncListeners":false,"disableChangesApi":true,"maxId":0,"DynamicViews":[],"events":{"insert":[null],"update":[null],"pre-insert":[],"pre-update":[],"close":[],"flushbuffer":[],"error":[],"delete":[null],"warning":[null]},"changes":[]},"put":null,"del":null,"route":"/clients"}
+{"post":null,"put":null,"delete":null,"route":"/echo/:name"}
+Listening on port 3000
+object
+undefined
+Listening on port 3000
