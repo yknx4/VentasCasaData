@@ -43,7 +43,7 @@ var server = require('../app');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000);
 
 /**
  * Create HTTP server.
